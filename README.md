@@ -30,9 +30,7 @@ API desenvolvida em **Java** com **Spring Boot** para a atividade prática da di
 3. **Pedido**
    * `id` (Long)
    * `clienteId` (Long)
-   * `clienteNome` (String)
    * `produtoId` (Long)
-   * `produtoNome` (String)
    * `quantidade` (Integer)
 
 ---
@@ -74,6 +72,28 @@ Certifique-se de configurar as seguintes variáveis de ambiente com os dados do 
 
 ## ⚙️ Como Executar o Projeto
 
-1. Clone este repositório:
+### Pré-requisitos
+* Java 17 ou superior
+* MySQL em execução na porta `3306`
+* Variáveis de ambiente `DB_USER` e `DB_PASSWORD` configuradas (veja a seção acima)
+
+### Passo a passo
+
+1. Clone este repositório e entre na pasta:
    ```bash
-   git clone <https://github.com/mands-mands/mr-robot-store-api.git>
+   git clone https://github.com/mands-mands/mr-robot-store-api.git
+   cd mr-robot-store-api
+   ```
+
+2. Execute a aplicação:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+   No Windows, use `mvnw.cmd spring-boot:run`. Também é possível rodar a classe `AtividadePraticaApplication` direto pela IDE.
+
+3. A API ficará disponível em `http://localhost:8080`.
+
+O banco `db_atividade_pratica` e as tabelas são criados automaticamente na primeira execução.
+
+### Testando no Postman
+Cadastre primeiro um cliente (`POST /clientes`) e um produto (`POST /produtos`). Só depois crie um pedido (`POST /pedidos`), informando os ids deles, porque a API valida se os dois existem.
