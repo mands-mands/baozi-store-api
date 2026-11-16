@@ -1,6 +1,6 @@
-# API REST - Atividade Prática (Mr Robot Store)
+# API REST - Atividade Prática (Baozi Store)
 
-API desenvolvida em **Java** com **Spring Boot** para a atividade prática da disciplina de Desenvolvimento Web Back-End (Análise e Desenvolvimento de Sistemas - UNINTER). O sistema gerencia o controle de clientes, produtos e pedidos de uma loja de eletrônicos fictícia.
+API desenvolvida em **Java** com **Spring Boot** para a atividade prática da disciplina de Desenvolvimento Web Back-End (Análise e Desenvolvimento de Sistemas - UNINTER). O sistema gerencia o controle de clientes, produtos e pedidos de uma loja fictícia de pão chinês.
 
 ---
 
@@ -81,8 +81,8 @@ Certifique-se de configurar as seguintes variáveis de ambiente com os dados do 
 
 1. Clone este repositório e entre na pasta:
    ```bash
-   git clone https://github.com/mands-mands/mr-robot-store-api.git
-   cd mr-robot-store-api
+   git clone https://github.com/mands-mands/baozi-store-api.git
+   cd baozi-store-api
    ```
 
 2. Execute a aplicação:
